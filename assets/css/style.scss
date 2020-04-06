@@ -483,24 +483,32 @@ p{
     border-radius: $border-radius;
     padding: $padding;
     width: 100%;
-    top: 30px;
+    top: 45vh;
+    display: none;
 
     .is-modal-content{
         font-size: 10pt;
         z-index: 9999;
         position: relative;
         text-align: center;
-    }
-    .is-modal-close{
-        width: 40%;
-        height: 5px;
-        margin: 0 auto;
-        background: $lightblack;
-        border-radius: 100px;
-        margin-top: 20px;
-        z-index: 9999;
-        position: relative;
-        opacity: .4;
+
+        .is-modal-buttons{
+            border-top: 1px solid $gray-text;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                font-size: 12pt;
+                flex: 1 1 0px;
+                padding: 10px 0;
+                text-align: center;
+                border-left: 1px solid $gray-text;
+            }
+            a:first-child{
+                border-left: none;
+            }
+        }
     }
 }
 .is-modal-middle:after{
@@ -526,7 +534,7 @@ p{
     left: 0;
     bottom: 0;
     right: 0;
-    top: 0;
+    top: -45vh;
 }
 
 // Buttons, Typography, ...

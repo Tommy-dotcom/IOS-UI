@@ -29,5 +29,11 @@ $(function(){
         $(this).parent('.is-modal-top').css({
             'display': 'none'
         });
+        $(this).parent('.is-modal-middle').css({
+            'display': 'none'
+        });
+        $(this).parent('.is-modal-bottom').css({
+            'display': 'none'
+        });
     });
 });

@@ -475,7 +475,8 @@ p {
   border-radius: 12px;
   padding: 17px;
   width: 100%;
-  top: 30px;
+  top: 45vh;
+  display: none;
 }
 .is-modal-middle .is-modal-content {
   font-size: 10pt;
@@ -483,16 +484,21 @@ p {
   position: relative;
   text-align: center;
 }
-.is-modal-middle .is-modal-close {
-  width: 40%;
-  height: 5px;
-  margin: 0 auto;
-  background: #111;
-  border-radius: 100px;
+.is-modal-middle .is-modal-content .is-modal-buttons {
+  border-top: 1px solid #8E8E8E;
   margin-top: 20px;
-  z-index: 9999;
-  position: relative;
-  opacity: 0.4;
+  display: flex;
+  justify-content: space-between;
+}
+.is-modal-middle .is-modal-content .is-modal-buttons a {
+  font-size: 12pt;
+  flex: 1 1 0px;
+  padding: 10px 0;
+  text-align: center;
+  border-left: 1px solid #8E8E8E;
+}
+.is-modal-middle .is-modal-content .is-modal-buttons a:first-child {
+  border-left: none;
 }
 
 .is-modal-middle:after {
@@ -519,7 +525,7 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  top: 0;
+  top: -45vh;
 }
 
 .is-primary {
