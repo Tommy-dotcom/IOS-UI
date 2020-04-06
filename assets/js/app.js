@@ -14,25 +14,25 @@ $(function(){
         });
     });
 
-    // Modal part
-    $('[data-toggle="modal"]').click(function(){
-        var modal = $(this).attr('data-target');
+    // Alert part
+    $('[data-toggle="alert"]').click(function(){
+        var alert = $(this).attr('data-target');
 
-        $('' + modal).css({
+        $('' + alert).css({
             'display': 'block'
         });
     });
 
 
-    // To close a modal
-    $('.is-modal-close').click(function(){
-        $(this).parent('.is-modal-top').css({
+    // To close an Alert
+    $('.is-alert-close').click(function(){
+        $(this).parent('.is-alert-top').css({
             'display': 'none'
         });
-        $(this).parent('.is-modal-middle').css({
+        $(this).parent('.is-alert-middle').css({
             'display': 'none'
         });
-        $(this).parent('.is-modal-bottom').css({
+        $(this).parent('.is-alert-bottom').css({
             'display': 'none'
         });
     });

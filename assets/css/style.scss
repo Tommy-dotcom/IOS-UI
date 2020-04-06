@@ -419,7 +419,7 @@ p{
         padding: $padding;
     }
 }
-.is-modal-top{
+.is-alert-top{
     position: absolute;
     z-index: 9999;
     top: 30px;
@@ -428,19 +428,20 @@ p{
     width: 100%;
     display: none;
 
-    .is-modal-title{
+    .is-alert-title{
         text-transform: uppercase;
         color: $gray-text;
         z-index: 9999;
         position: relative;
+        font-size: 10pt;
     }
-    .is-modal-content{
+    .is-alert-content{
         font-size: 10pt;
         z-index: 9999;
         position: relative;
         margin-top: 10px;
     }
-    .is-modal-close{
+    .is-alert-close{
         width: 40%;
         height: 5px;
         margin: 0 auto;
@@ -452,7 +453,7 @@ p{
         opacity: .4;
     }
 }
-.is-modal-top:after{
+.is-alert-top:after{
     width: 96%;
     height: 100%;
     position: absolute;
@@ -465,7 +466,7 @@ p{
     transform: blur(15px);
     border-radius: $border-radius;
 }
-.is-modal-top:before{
+.is-alert-top:before{
     content: "";
     background: $disabled-background;
     width: 100vw;
@@ -478,7 +479,7 @@ p{
     right: 0;
 }
 
-.is-modal-middle{
+.is-alert-middle{
     position: absolute;
     z-index: 9999;
     border-radius: $border-radius;
@@ -487,13 +488,13 @@ p{
     top: 45vh;
     display: none;
 
-    .is-modal-content{
+    .is-alert-content{
         font-size: 10pt;
         z-index: 9999;
         position: relative;
         text-align: center;
 
-        .is-modal-buttons{
+        .is-alert-buttons{
             border-top: 1px solid $modal-gray-border;
             margin-top: 20px;
             display: flex;
@@ -512,7 +513,7 @@ p{
         }
     }
 }
-.is-modal-middle:after{
+.is-alert-middle:after{
     width: 96%;
     height: 100%;
     position: absolute;
@@ -525,7 +526,7 @@ p{
     transform: blur(15px);
     border-radius: $border-radius;
 }
-.is-modal-middle:before{
+.is-alert-middle:before{
     content: "";
     background: $disabled-background;
     width: 100vw;
@@ -537,6 +538,86 @@ p{
     right: 0;
     top: -45vh;
 }
+
+.is-alert-bottom{
+    position: absolute;
+    z-index: 9999;
+    border-radius: $border-radius;
+    padding: $padding;
+    width: 100%;
+    bottom: 30px;
+    display: none;
+
+    .is-alert-list{
+        position: relative;
+        z-index: 9999;
+
+        ul li{
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid $modal-gray-border;
+            padding: 10px;
+            align-items: center;
+            font-size: 13pt;
+
+            i {
+                font-size: 20pt;
+                margin-right: 10px;
+            }
+        }
+        ul li:last-child{
+            border-bottom: none;
+        }
+    }
+    .is-alert-list:after{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        background: #fff;
+        z-index: -1;
+        opacity: .9;
+        top: 0;
+        transform: blur(15px);
+        border-radius: $border-radius;
+    }
+    .is-alert-close{
+        text-align: center;
+        position: relative;
+        z-index: 9999;
+        font-size: 13pt;
+        padding: 10px;
+        border-radius: $border-radius;
+        margin-top: 7px;
+    }
+    .is-alert-close:after{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        background: #fff;
+        z-index: -1;
+        opacity: .9;
+        top: 0;
+        left: 0;
+        transform: blur(15px);
+        border-radius: $border-radius;
+    }
+}
+
+.is-alert-bottom:before{
+    content: "";
+    background: $disabled-background;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9996;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    bottom: -30px;
+}
+
 
 // Buttons, Typography, ...
 
