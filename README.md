@@ -13,6 +13,9 @@ It's like Bootstrap but inspired by Apple's design.
 ![screens/second.png](screens/third.png)
 ![screens/second.png](screens/fourth.png)
 ![screens/second.png](screens/fifth.png)
+![screens/second.png](screens/sixth.png)
+![screens/second.png](screens/seventh.png)
+![screens/second.png](screens/eighth.png)
 
 </div>
 
