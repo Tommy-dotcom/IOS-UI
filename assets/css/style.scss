@@ -1,0 +1,245 @@
+@import url('fonts.css');
+@import url('icons.css');
+
+// VARIABLES
+
+// Main Colors
+
+$black: #000;
+$lightblack: #111;
+
+$primary: #0081F9;
+
+$danger: #FD0220;
+$rosered: #FD004E;
+
+$secondary: #1BC853;
+
+$gray-text: #8E8E8E;
+$gray-bar: #E7E7E7;
+$lightgray: #EAEAEA;
+
+$disabled-background: rgba(0,0,0,.7);
+
+
+// Main Fonts
+
+$font-title: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size-title: 36px;
+$letter-spacing-title: -0.022em;
+
+$font-text: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size-text: 12px;
+$line-height-text: 1.47;
+$letter-spacing-text: -0.022em;
+
+$font-size-subtitle: 10pt;
+
+$font-size-small: 9pt;
+
+// Main Elements (Padding, ...)
+
+$border-radius: 12px;
+$box-shadow: 10px 0 20px rgba(0,0,0,.1);
+$padding: 17px;
+$transition-color: color .2s;
+
+
+// Normalizing
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+*:focus{
+    outline: none;
+}
+button{
+    background: transparent;
+}
+a{
+    text-decoration: none;
+    color: $primary;
+}
+ul li{
+    list-style: none;
+}
+
+// Grid system
+
+.grid{
+    display: flex;
+
+    .child-1{
+        flex-basis: 100%;
+    }
+    .child-2{
+        flex-basis: 50%;
+    }
+    .child-3{
+        flex-basis: 33%;
+    }
+    .child-4{
+        flex-basis: 25%;
+    }
+    .child-5{
+        flex-basis: 20%;
+    }
+    .child-6{
+        flex-basis: 16%;
+    }
+}
+.grid-wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-round{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+// Buttons, Typography, ...
+
+.is-primary{
+    background: $primary;
+    color: #fff;
+}
+.is-secondary{
+    background: $secondary;
+    color: #fff;
+}
+.is-lightgray{
+    background: $lightgray;
+}
+.is-black{
+    background: $black;
+    color: #fff;
+}
+.is-danger{
+    background: $danger;
+    color: #fff;
+}
+.is-rosered{
+    background: $rosered;
+}
+.is-gray{
+    background: $gray-bar;
+}
+
+.text-primary{
+    color: $primary;
+}
+.text-secondary{
+    color: $secondary;
+}
+.text-lightgray{
+    color: $lightgray
+}
+.text-black{
+    background: $black;
+    color: #fff;
+}
+.text-danger{
+    color: $danger;
+}
+.text-rosered{
+    color: $rosered;
+}
+.text-gray{
+    color: $gray-text;
+}
+
+.is-rounded{
+    border-radius: $border-radius;
+}
+
+button.sm-button{
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+    font-size: 10pt;
+}
+.button-large-button{
+
+}
+
+// Main Elements UI
+
+.is-right{
+    text-align: right;
+}
+.is-center{
+    text-align: center;
+}
+.is-title{
+    padding: $padding;
+    padding-top: 40px;
+    border-bottom: 1px solid $gray-bar;
+
+    .is-main-title{
+        font-family: $font-title;
+        font-size: $font-size-title;
+        letter-spacing: $letter-spacing-title;
+    }
+    .is-subtitle{
+        text-transform: uppercase;
+        color: $gray-text;
+        font-weight: bold;
+        font-size: $font-size-subtitle;
+        margin-bottom: 5px;
+    }
+}
+.is-bottom-menu{
+    padding: $padding;
+    position: fixed;
+    z-index: 9999;
+    border-top: 1px solid $gray-bar;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .is-list-menu{
+        display: flex;
+        justify-content: space-between;
+
+        .is-menu-component{
+            font-size: $font-size-small;
+            transition: $transition-color;
+
+            .is-icon-menu{
+                font-size: 20pt;
+                display: block;
+            }
+        }
+        .is-menu-component.is-active{
+            color: $primary;
+        }
+        .is-menu-component:hover, .is-menu-component:active{
+            color: $primary;
+        }
+    }
+}
