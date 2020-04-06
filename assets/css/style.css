@@ -605,6 +605,87 @@ p {
   bottom: -30px;
 }
 
+.is-fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+.is-fullscreen .is-positionned-right-close {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+.is-fullscreen .is-positionned-right-close a {
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.is-fullscreen .is-positionned-left-close {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+.is-fullscreen .is-positionned-left-close a {
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.is-fullscreen .is-positionned-bottom-right-close {
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+.is-fullscreen .is-positionned-bottom-right-close a {
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.is-fullscreen .is-positionned-bottom-left-close {
+  position: absolute;
+  left: 17px;
+  bottom: 17px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+.is-fullscreen .is-positionned-bottom-left-close a {
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+.is-fullscreen .is-content-fullscreen {
+  position: absolute;
+  bottom: 0;
+  padding: 17px;
+  background: #fff;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
 .is-primary {
   background: #0081F9;
   color: #fff;
@@ -699,6 +780,63 @@ p {
 
 .is-small-padding {
   padding: 3px;
+}
+
+input[type=text].is-input,
+input[type=password].is-input,
+input[type=email].is-input,
+input[type=number].is-input,
+input[type=tel].is-input,
+input[type=date].is-input {
+  border: none;
+  border-bottom: 1px solid #EAEAEA;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 11pt;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.is-big-input {
+  font-size: 16pt !important;
+}
+
+.is-input-flex {
+  display: flex;
+  border-bottom: 1px solid #EAEAEA;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 11pt;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.is-input-flex input {
+  text-align: right;
+  font-size: 11pt;
+  font-weight: 400;
+  flex-basis: 60%;
+  color: #8E8E8E;
+  transition: all 0.3s;
+}
+.is-input-flex input:focus {
+  color: #000;
+}
+
+.is-checkbox-flex {
+  margin-top: 15px;
+}
+.is-checkbox-flex label {
+  font-weight: bold;
+}
+.is-checkbox-flex .grid {
+  margin-top: 10px;
+}
+.is-checkbox-flex img {
+  width: 80%;
+}
+
+::placeholder {
+  color: #8E8E8E;
 }
 
 /*# sourceMappingURL=style.css.map */

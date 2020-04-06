@@ -36,4 +36,12 @@ $(function(){
             'display': 'none'
         });
     });
+
+    // Is fullscreen
+    $('.is-fullscreen').each(function(){
+        $(this).css({
+            'background': 'url(' + $(this).attr('data-background') + ')',
+            'background-size': 'cover'
+        });
+    });
 });

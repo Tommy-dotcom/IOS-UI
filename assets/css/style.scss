@@ -618,6 +618,91 @@ p{
     bottom: -30px;
 }
 
+.is-fullscreen{
+    width: 100vw;
+    height: 100vh;
+
+    .is-positionned-right-close{
+        position: absolute;
+        right: $padding;
+        top: $padding;
+        background: #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        a{
+            font-size: 15pt;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .is-positionned-left-close{
+        position: absolute;
+        left: $padding;
+        top: $padding;
+        background: #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        a{
+            font-size: 15pt;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .is-positionned-bottom-right-close{
+        position: absolute;
+        right: $padding;
+        bottom: $padding;
+        background: #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        a{
+            font-size: 15pt;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .is-positionned-bottom-left-close{
+        position: absolute;
+        left: $padding;
+        bottom: $padding;
+        background: #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        a{
+            font-size: 15pt;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .is-content-fullscreen {
+        position: absolute;
+        bottom: 0;
+        padding: $padding;
+        background: #fff;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+}
 
 // Buttons, Typography, ...
 
@@ -699,4 +784,58 @@ p{
 }
 .is-small-padding{
     padding: 3px;
+}
+input[type='text'].is-input,
+input[type='password'].is-input,
+input[type='email'].is-input,
+input[type='number'].is-input,
+input[type='tel'].is-input,
+input[type='date'].is-input, {
+    border: none;
+    border-bottom: 1px solid $lightgray;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 11pt;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.is-big-input{
+    font-size: 16pt!important;
+}
+.is-input-flex{
+    display: flex;
+    border-bottom: 1px solid $lightgray;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 11pt;
+    margin-top: 10px;
+    justify-content: space-between;
+
+    input{
+        text-align: right;
+        font-size: 11pt;
+        font-weight: 400;
+        flex-basis: 60%;
+        color: $gray-text;
+        transition: all .3s;
+    }
+    input:focus{
+        color: #000;
+    }
+}
+.is-checkbox-flex{
+    margin-top: 15px;
+
+    label{
+        font-weight: bold;
+    }
+    .grid{
+        margin-top: 10px;
+    }
+    img{
+        width: 80%;
+    }
+}
+::placeholder{
+    color: $gray-text;
 }
