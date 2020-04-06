@@ -151,6 +151,10 @@ ul li {
   border-radius: 12px;
 }
 
+.is-circled {
+  border-radius: 100%;
+}
+
 button.sm-button {
   font-weight: bold;
   border-radius: 20px;
@@ -165,6 +169,26 @@ button.sm-button {
 
 .is-center {
   text-align: center;
+}
+
+.is-title-text {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 36px;
+  letter-spacing: -0.022em;
+}
+
+.is-small-title-text {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 25px;
+  letter-spacing: -0.022em;
+}
+
+.is-subtitle-text {
+  text-transform: uppercase;
+  color: #8E8E8E;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-bottom: 5px;
 }
 
 .is-title {
@@ -193,6 +217,7 @@ button.sm-button {
   bottom: 0;
   left: 0;
   width: 100%;
+  background: #fff;
 }
 .is-bottom-menu .is-list-menu {
   display: flex;
@@ -211,6 +236,103 @@ button.sm-button {
 }
 .is-bottom-menu .is-list-menu .is-menu-component:hover, .is-bottom-menu .is-list-menu .is-menu-component:active {
   color: #0081F9;
+}
+
+.is-main-container {
+  padding: 17px;
+}
+
+.is-card {
+  border-radius: 12px;
+  height: 250px;
+  width: 100%;
+  margin: 17px 0;
+  position: relative;
+  overflow: hidden;
+}
+.is-card .is-background-card {
+  position: absolute;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.is-card .is-background-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.is-card .is-card-content-title {
+  padding: 17px;
+  color: #fff;
+}
+.is-card .is-card-content-title .is-card-title-text {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  line-height: 1.47;
+}
+.is-card .is-card-content-title .is-card-subtitle-text {
+  color: #EAEAEA;
+  text-transform: uppercase;
+  font-size: 9pt;
+}
+.is-card .is-card-content-bottom {
+  position: absolute;
+  bottom: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+}
+.is-card .is-card-content-bottom p {
+  color: #EAEAEA;
+  font-size: 9pt;
+  line-height: 1.47;
+}
+
+.is-list .is-list-separator {
+  font-size: 15pt;
+  margin: 15px 0;
+  display: flex;
+}
+.is-list .is-list-separator h5 {
+  margin-right: 10px;
+}
+.is-list .is-list-component {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  border-top: 1px solid #E7E7E7;
+  align-items: center;
+}
+.is-list .is-list-component .is-list-img {
+  width: 65px;
+  border-radius: 12px;
+}
+.is-list .is-list-component .is-list-img.is-big {
+  width: 80px;
+}
+.is-list .is-list-component .is-list-img.is-small {
+  width: 50px;
+}
+.is-list .is-list-component .is-list-text {
+  margin-left: 17px;
+}
+.is-list .is-list-component .is-list-text h5 {
+  color: #8E8E8E;
+  font-weight: 300;
+  line-height: 1.47;
+}
+
+.is-list.is-hoverable .is-list-component:hover {
+  background: #EAEAEA;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -175,6 +175,9 @@ ul li{
 .is-rounded{
     border-radius: $border-radius;
 }
+.is-circled{
+    border-radius: 100%;
+}
 
 button.sm-button{
     font-weight: bold;
@@ -194,6 +197,23 @@ button.sm-button{
 }
 .is-center{
     text-align: center;
+}
+.is-title-text{
+    font-family: $font-title;
+    font-size: $font-size-title;
+    letter-spacing: $letter-spacing-title;
+}
+.is-small-title-text{
+    font-family: $font-title;
+    font-size: 25px;
+    letter-spacing: $letter-spacing-title;
+}
+.is-subtitle-text{
+    text-transform: uppercase;
+    color: $gray-text;
+    font-weight: bold;
+    font-size: $font-size-subtitle;
+    margin-bottom: 5px;
 }
 .is-title{
     padding: $padding;
@@ -221,6 +241,7 @@ button.sm-button{
     bottom: 0;
     left: 0;
     width: 100%;
+    background: #fff;
 
     .is-list-menu{
         display: flex;
@@ -241,5 +262,110 @@ button.sm-button{
         .is-menu-component:hover, .is-menu-component:active{
             color: $primary;
         }
+    }
+}
+.is-main-container{
+    padding: $padding;
+}
+.is-card{
+    border-radius: $border-radius;
+    height: 250px;
+    width: 100%;
+    margin: 17px 0;
+    position: relative;
+    overflow: hidden;
+
+    .is-background-card{
+        position: absolute;
+        width: 100%;
+        border-radius: $border-radius;
+        height: 100%;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        img{
+            width: 100%;
+            border-radius: $border-radius;
+        }
+    }
+    .is-card-content-title{
+        padding: $padding;
+        color: #fff;
+
+        .is-card-title-text{
+            font-family: $font-title;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: $letter-spacing-title;
+            line-height: $line-height-text;
+        }
+        .is-card-subtitle-text{
+            color: $lightgray;
+            text-transform: uppercase;
+            font-size: $font-size-small;
+        }
+    }
+    .is-card-content-bottom{
+        position: absolute;
+        bottom: 10px;
+        padding-left: $padding;
+        padding-right: $padding;
+        padding-bottom: $padding;
+        width: 100%;
+        border-radius: 0 0 $border-radius $border-radius;
+        background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+
+        p{
+            color: $lightgray;
+            font-size: $font-size-small;
+            line-height: $line-height-text;
+        }
+    }
+}
+.is-list{
+    .is-list-separator{
+        font-size: 15pt;
+        margin: 15px 0;
+        display: flex;
+
+        h5{
+            margin-right: 10px;
+        }
+
+    }
+    .is-list-component{
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px 0;
+        border-top: 1px solid $gray-bar;
+        align-items: center;
+
+        .is-list-img{
+            width: 65px;
+            border-radius: $border-radius;
+        }
+        .is-list-img.is-big{
+            width: 80px;
+        }
+        .is-list-img.is-small{
+            width: 50px;
+        }
+        .is-list-text{
+            margin-left: 17px;
+
+            h5{
+                color: $gray-text;
+                font-weight: 300;
+                line-height: $line-height-text;
+            }
+        }
+    }
+}
+.is-list.is-hoverable{
+    .is-list-component:hover{
+        background: $lightgray;
     }
 }
