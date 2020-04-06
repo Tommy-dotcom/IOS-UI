@@ -5,9 +5,17 @@ It's like Bootstrap but inspired by Apple's design.
 
 ## Screenshots
 
+<div style="display:flex;">
+
 ![screens/first.png](screens/first.png)
 
 ![screens/second.png](screens/second.png)
+![screens/second.png](screens/third.png)
+![screens/second.png](screens/fourth.png)
+![screens/second.png](screens/fifth.png)
+
+</div>
+
 
 ## Disclaimer
 

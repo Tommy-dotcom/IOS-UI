@@ -485,7 +485,7 @@ p {
   text-align: center;
 }
 .is-modal-middle .is-modal-content .is-modal-buttons {
-  border-top: 1px solid #8E8E8E;
+  border-top: 1px solid #C8C8C8;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -495,7 +495,7 @@ p {
   flex: 1 1 0px;
   padding: 10px 0;
   text-align: center;
-  border-left: 1px solid #8E8E8E;
+  border-left: 1px solid #C8C8C8;
 }
 .is-modal-middle .is-modal-content .is-modal-buttons a:first-child {
   border-left: none;

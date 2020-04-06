@@ -18,6 +18,7 @@ $secondary: #1BC853;
 $gray-text: #8E8E8E;
 $gray-bar: #E7E7E7;
 $lightgray: #EAEAEA;
+$modal-gray-border: #C8C8C8;
 
 $disabled-background: rgba(0,0,0,.7);
 
@@ -493,7 +494,7 @@ p{
         text-align: center;
 
         .is-modal-buttons{
-            border-top: 1px solid $gray-text;
+            border-top: 1px solid $modal-gray-border;
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
@@ -503,7 +504,7 @@ p{
                 flex: 1 1 0px;
                 padding: 10px 0;
                 text-align: center;
-                border-left: 1px solid $gray-text;
+                border-left: 1px solid $modal-gray-border;
             }
             a:first-child{
                 border-left: none;
