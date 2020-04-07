@@ -723,6 +723,34 @@ p {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.is-pagination ul {
+  display: flex;
+  border: 1px solid #0081F9;
+  width: auto;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+.is-pagination ul li {
+  text-align: center;
+  border-right: 1px solid #0081F9;
+  flex: 1 1 0;
+  padding: 3px;
+  font-size: 10pt;
+  color: #0081F9;
+  transition: all 0.3s;
+}
+.is-pagination ul li:hover, .is-pagination ul li:active, .is-pagination ul li.is-active {
+  background: #0081F9;
+  color: #fff;
+}
+.is-pagination ul li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.is-pagination ul li:last-child {
+  border-right: none;
+  border-radius: 0 4px 4px 0;
+}
+
 .is-primary {
   background: #0081F9;
   color: #fff;

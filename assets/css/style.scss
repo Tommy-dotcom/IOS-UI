@@ -51,7 +51,7 @@ $transition-color: color .2s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: $font-title;
 }
 *:focus{
     outline: none;
@@ -161,7 +161,7 @@ p{
     padding-bottom: 5px;
 }
 
-// Grid syste-rightm
+// Grid system
 
 .grid{
     display: flex;
@@ -738,6 +738,36 @@ p{
     }
     .is-content-fullscreen-blured.is-dark-blured:after{
         background: rgba(0,0,0,.6);
+    }
+}
+.is-pagination{
+    ul{
+        display: flex;
+        border: 1px solid $primary;
+        width: auto;
+        justify-content: space-between;
+        border-radius: 4px;
+
+        li{
+            text-align: center;
+            border-right: 1px solid $primary;
+            flex: 1 1 0;
+            padding: 3px;
+            font-size: 10pt;
+            color: $primary;
+            transition: all .3s;
+        }
+        li:hover, li:active, li.is-active{
+            background: $primary;
+            color: #fff;
+        }
+        li:first-child{
+            border-radius: 4px 0 0 4px;
+        }
+        li:last-child{
+            border-right: none;
+            border-radius: 0 4px 4px 0;
+        }
     }
 }
 
