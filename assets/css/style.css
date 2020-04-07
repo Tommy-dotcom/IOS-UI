@@ -417,12 +417,16 @@ p {
   padding: 17px;
   width: 100%;
   display: none;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
 }
 .is-alert-top .is-alert-title {
   text-transform: uppercase;
   color: #8E8E8E;
   z-index: 9999;
   position: relative;
+  background: transparent;
   font-size: 10pt;
 }
 .is-alert-top .is-alert-content {
@@ -430,6 +434,7 @@ p {
   z-index: 9999;
   position: relative;
   margin-top: 10px;
+  background: transparent;
 }
 .is-alert-top .is-alert-close {
   width: 40%;
@@ -442,32 +447,30 @@ p {
   position: relative;
   opacity: 0.4;
 }
-
-.is-alert-top:after {
-  width: 96%;
-  height: 100%;
-  position: absolute;
-  content: "";
-  left: 2%;
-  background: #fff;
-  z-index: 9997;
-  opacity: 0.9;
-  top: 0;
-  transform: blur(15px);
-  border-radius: 12px;
-}
-
 .is-alert-top:before {
   content: "";
   background: rgba(0, 0, 0, 0.7);
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 9996;
+  z-index: -2;
   top: -30px;
   left: 0;
   bottom: 0;
   right: 0;
+}
+.is-alert-top:after {
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  left: 2%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9997;
+  top: 0;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+  border-radius: 12px;
 }
 
 .is-alert-middle {
@@ -501,21 +504,19 @@ p {
 .is-alert-middle .is-alert-content .is-alert-buttons a:first-child {
   border-left: none;
 }
-
 .is-alert-middle:after {
   width: 96%;
   height: 100%;
   position: absolute;
   content: "";
   left: 2%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   z-index: 9997;
-  opacity: 0.9;
   top: 0;
-  transform: blur(15px);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
   border-radius: 12px;
 }
-
 .is-alert-middle:before {
   content: "";
   background: rgba(0, 0, 0, 0.7);
@@ -562,7 +563,9 @@ p {
   height: 100%;
   position: absolute;
   content: "";
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
   z-index: -1;
   opacity: 0.9;
   top: 0;
@@ -583,7 +586,9 @@ p {
   height: 100%;
   position: absolute;
   content: "";
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
   z-index: -1;
   opacity: 0.9;
   top: 0;
@@ -591,7 +596,6 @@ p {
   transform: blur(15px);
   border-radius: 12px;
 }
-
 .is-alert-bottom:before {
   content: "";
   background: rgba(0, 0, 0, 0.7);
@@ -686,7 +690,9 @@ p {
   border-radius: 20px 20px 0 0;
 }
 .is-fullscreen .is-content-fullscreen-blured {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
   overflow: hidden;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -695,32 +701,11 @@ p {
   padding: 17px;
   z-index: 9;
 }
-.is-fullscreen .is-content-fullscreen-blured:before {
-  content: "";
-  position: absolute;
-  width: 110%;
-  height: 130%;
-  top: -10%;
-  z-index: -2;
-  border-radius: 20px 20px 0 0;
-}
-.is-fullscreen .is-content-fullscreen-blured:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  opacity: 0.6;
-  z-index: -1;
-  border-radius: 20px 20px 0 0;
-  top: 0;
-  left: 0;
-}
 .is-fullscreen .is-content-fullscreen-blured.is-dark-blured {
   color: #fff;
-}
-.is-fullscreen .is-content-fullscreen-blured.is-dark-blured:after {
-  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .is-pagination ul {
@@ -749,6 +734,68 @@ p {
 .is-pagination ul li:last-child {
   border-right: none;
   border-radius: 0 4px 4px 0;
+}
+
+.is-checkbox {
+  display: block;
+  background: #fff;
+  width: 42px;
+  height: 25px;
+  cursor: pointer;
+  will-change: background;
+  border-radius: 100px;
+  position: relative;
+  transition: 0s background 0.25s ease-in-out;
+}
+.is-checkbox:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  content: "";
+  display: block;
+  border-radius: 100px;
+  will-change: transform;
+  box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
+  will-change: background;
+}
+.is-checkbox:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 22px;
+  width: 22px;
+  top: 1px;
+  left: 2px;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: all 0.25s ease-in-out;
+  transform: translateX(0px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.is-checkbox:active:after {
+  width: 30px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + label.is-checkbox {
+  background-color: #40E699;
+  transition: 0s background 0s ease-in-out;
+}
+input[type=checkbox]:checked + label.is-checkbox:after {
+  transform: translateX(17px);
+}
+input[type=checkbox]:checked + label.is-checkbox:active:after {
+  transform: translateX(19px);
+}
+input[type=checkbox]:checked + label.is-checkbox:before {
+  transform: translateX(7px) scale(0.1);
 }
 
 .is-primary {
@@ -781,6 +828,14 @@ p {
 
 .is-gray {
   background: #E7E7E7;
+}
+
+.is-black-transparent {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.is-white-transparent {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .text-primary {
@@ -916,6 +971,11 @@ input[type=date].is-input {
 
 ::placeholder {
   color: #8E8E8E;
+}
+
+.is-blured-background {
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
 }
 
 /*# sourceMappingURL=style.css.map */
