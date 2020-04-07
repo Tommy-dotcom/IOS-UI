@@ -44,4 +44,13 @@ $(function(){
             'background-size': 'cover'
         });
     });
+
+    // Is Fullscreen Content Blured
+    $('head').append("<style>" +
+        ".is-content-fullscreen-blured:before{" +
+        "   background: url("+ $('.is-content-fullscreen-blured').parent('.is-fullscreen').attr('data-background') +");" +
+        "   background-size: cover;" +
+        "   filter: blur(14px);" +
+        "}" +
+        "</style>");
 });
