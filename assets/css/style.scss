@@ -715,7 +715,7 @@ p{
         border-radius: 20px 20px 0 0;
     }
     .is-content-fullscreen-blured{
-        background: rgba(255, 255, 255, .2);
+        background: $transparent-white;
         backdrop-filter: blur(80px);
         -webkit-backdrop-filter: blur(80px);
         overflow: hidden;
@@ -731,7 +731,7 @@ p{
         color: #fff;
         backdrop-filter: blur(80px);
         -webkit-backdrop-filter: blur(80px);
-        background: rgba(0,0,0,.2);
+        background: $transparent;
     }
 }
 .is-pagination{
@@ -873,8 +873,7 @@ input[type=checkbox]:checked + label.is-checkbox{
     color: $lightgray
 }
 .text-black{
-    background: $black;
-    color: #fff;
+    color: #000;
 }
 .text-danger{
     color: $danger;

@@ -690,7 +690,7 @@ p {
   border-radius: 20px 20px 0 0;
 }
 .is-fullscreen .is-content-fullscreen-blured {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(80px);
   overflow: hidden;
@@ -851,8 +851,7 @@ input[type=checkbox]:checked + label.is-checkbox:before {
 }
 
 .text-black {
-  background: #000;
-  color: #fff;
+  color: #000;
 }
 
 .text-danger {
