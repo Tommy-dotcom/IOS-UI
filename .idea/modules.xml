@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/IOS-UI.iml" filepath="$PROJECT_DIR$/.idea/IOS-UI.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/testSwup/.idea/testSwup.iml" filepath="$USER_HOME$/Desktop/testSwup/.idea/testSwup.iml" />
     </modules>
   </component>
 </project>
